@@ -36,12 +36,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'ana.carolina@cartoriosdeprotesto.org.br'; 
-            $mail->Password = '140609ana'; 
+            $mail->Username = 'XXXXXXXXXXXXXXXXXXXXX'; 
+            $mail->Password = 'XXXXXXX'; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587; 
 
-            $mail->setFrom('ana.carolina@cartoriosdeprotesto.org.br', 'Ana Carolina');
+            $mail->setFrom('XXXXXXXXXXXXXX', 'Ana Carolina');
             $mail->addAddress($email);
             $mail->Subject = $assunto;
             $mail->Body = "Nome: $nome\nEmail: $email\nTelefone: $telefone\nComunicado: $comunicado\n\n";
